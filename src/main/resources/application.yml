@@ -1,0 +1,25 @@
+server: 
+    port: 8087
+
+spring:
+    profiles:
+        active: prod
+    application:
+        name: Spring
+    jpa:
+        hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+            ddl-auto: none
+            show-sql: false
+    liquibase:
+        change-log: classpath:liquibase/master.xml
+
+management:
+    endpoints:
+        shutdown:
+            enabled: true
+        health:
+            show-details: always
+        web:
+            exposure:
+                include: '*'

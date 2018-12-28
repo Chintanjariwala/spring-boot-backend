@@ -1,0 +1,12 @@
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/employee_crud?useSSL=false
+        username: ${DATABASE_USERNAME}
+        password: ${DATABASE_PASSWORD}
+        driverClassName: com.mysql.cj.jdbc.Driver
+
+com:
+    app:
+        jwtSecret: TheQuickBrownFoxJumpsOverTheLazyDog
+        jwtExpiration: 1000
+        
