@@ -6,6 +6,9 @@ spring:
         active: prod
     application:
         name: Spring
+    output:
+        ansi:
+            enabled: always
     jpa:
         hibernate:
             dialect: org.hibernate.dialect.MySQL5Dialect
