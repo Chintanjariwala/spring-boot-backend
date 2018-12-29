@@ -8,11 +8,6 @@ spring:
         password: traning
         driverClassName: com.mysql.cj.jdbc.Driver
 
-com:
-    app:
-        jwtSecret: TheQuickBrownFoxJumpsOverTheLazyDog
-        jwtExpiration: 1000
-
 logging:
     path: C:/dev/logs
     file: ${logging.path}/debug.log

@@ -3,9 +3,6 @@ spring:
         active: dev
     application:
         name: Spring
-    output:
-        ansi:
-            enabled: detect
     jpa:
         hibernate:
             dialect: org.hibernate.dialect.MySQL5Dialect
@@ -16,10 +13,11 @@ spring:
 
 management:
     endpoints:
-        shutdown:
-            enabled: true
-        health:
-            show-details: always
         web:
             exposure:
                 include: '*'
+
+com:
+    app:
+        jwtSecret: TheQuickBrownFoxJumpsOverTheLazyDog
+        jwtExpiration: 1000
