@@ -12,11 +12,12 @@ public class WelcomeRestController {
 
     Logger logger = LoggerFactory.getLogger(WelcomeRestController.class);
 
-
+    @Value("${spring.application.name}")
+    private String welcome;
 
     @GetMapping("/welcome")
     public String index() {
-        logger.debug("WelcomeControler");
-        return "Hello World!";
+        logger.debug("WelcomeControler is called");
+        return welcome;
     }
 }
