@@ -14,3 +14,7 @@ com:
     app:
         jwtSecret: TheQuickBrownFoxJumpsOverTheLazyDog
         jwtExpiration: 1000
+
+logging:
+    path: /tmp/logs
+    file: ${logging.path}/debug.log

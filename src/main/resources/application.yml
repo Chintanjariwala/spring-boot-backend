@@ -1,11 +1,11 @@
 spring:
     profiles:
-        active: prod
+        active: dev
     application:
         name: Spring
     output:
         ansi:
-            enabled: always
+            enabled: detect
     jpa:
         hibernate:
             dialect: org.hibernate.dialect.MySQL5Dialect
